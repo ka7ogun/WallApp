@@ -2,7 +2,7 @@
 	<html>
 		<head>
  			<title>OFFICIAL WALL-OFF NYC SITE</title>
-			 	<link rel="stylesheet" type="text/css"  href="style.css">
+			 	<link rel="stylesheet" type="text/css"  href="css/style.css">
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Muli:400,300italic,300' rel='stylesheet' type='text/css'>
 		</head>
@@ -11,26 +11,27 @@
 		<header>
  
 			<div class="center" id="wrap">
-			<h1>Wall-Off NYC</h1><br>
-			<em> "Teens Painting NYC" </em>
+				<h1>Wall-Off NYC</h1><br>
+				<em> "Teens Painting NYC" </em>
 			</div>
-		<nav class="center">
-			<ul id="menu"> 
-			<li><a href="#"> Home </a> </li>
+			<nav class="center">
+					<ul id="menu"> 
+					<li><a href="index.html"> Home </a> </li>
 
-			<li> <a href="#"> Wall-Off</a> </li>
-			<li> <a href="#"> Artist</a> </li>
-			
-			<li> <a href="#">Join </a> 
-			
-					<ul> 
-			 		<li> <a href="#">Teen</a></li>
-			 		<li> <a href="#">Adult</a></li>
-			 		</ul></li> 
+					<li> <a href="walloff.html"> Wall-Off</a> </li>
+					<li> <a href="artist.html"> Artist</a> </li>
+					
+					<li> <a href="join.html">Join </a> 
+					
+							<ul id="submenu"> 
+					 		<li> <a href="teen.html" target="_blank">Teen</a></li>
+					 		<li> <a href="adult.html" target="_blank">Adult</a></li>
+					 		</ul>
+					</li> 
 
-			<li> <a href="#">Contact </a></li>
-			</ul>
-		</nav>
+					<li> <a href="#contact">Contact </a></li>
+					</ul>
+				</nav>
 		</header>
 
 
@@ -43,12 +44,12 @@
 			<form>
 				<fieldset> 
 				   <legend>Personal Info</legend>
-					 <table border="1">
+					 <table>
 
-							<tr> <td colspan="2"> Name: </td> </tr>
+							<tr> <td colspan="2" class="center"> Name: </td> </tr>
 							<tr> <td> <input type="text" name="firstname" id="FN" placeholder="First Name" /> </td> <td><input type="text" name="lastname" id="LN" placeholder="Last Name" /></td> </tr>
-							<tr> <td colspan="2"> Email Address: </td> </tr>
-							<tr> <td colspan="2"> <input type="text" name="email" id="E1" size="42" placeholder="We will email volunteer opps"/></td></tr>
+							<tr> <td colspan="2" class="center"> Email Address: </td> </tr>
+							<tr> <td colspan="2"> <input type="text" name="email" id="E1" size="42" placeholder="We will send project info to this address"/></td></tr>
 							<tr> <td> Your Borough: </td> <td><select> 
 																  <option> Brooklyn </option>
 																  <option> Bronx </option>
@@ -57,28 +58,11 @@
 																  <option> Staten Island </option>
 														 	  </select> </td> </tr>
 							<tr> <td> Age: </td> <td> Youth (12-21)<input type="radio" name="age" id="Y1"/> Adult (over 21) <input type="radio" name="age" id="A1"/> </td> </tr>
-							
+							<tr><td colspan="2" class="center"><button type="button"> Sign Up</button></td></tr>	
 					 </table>
 				</fieldset>
 
-				<fieldset>
-				  <legend> Occupation </legend>
-					<table border="1">
-							<tr> <td> Job Title: </td> <td> <select> 
-																  <option> Student </option>
-																  <option> Artist </option>
-																  <option> Teacher </option>
-																  <option> Counselor </option>
-														 	  </select> </td> </tr>
-							<tr> <td> School Name: </td> <td> <input type="text" name="school" id="S1" size="42" placeholder="High School or College"/> </td> </tr>
-							<tr> <td> Company Name: </td> <td><input type="text" name="company" id="C1" size="42" placeholder="Work Place"/> </td> </tr>
-							<tr> <td colspan="2"> Address: </td> </tr>
-							<tr> <td> Street Name: </td> <td> <input type="text" name="address" id="A1" placeholder="Street Name"/> </td> </tr>
-							<tr> <td> City: </td> <td><input type="text" name="city" id="C2" placeholder="City"/></td> </tr>
-							<tr> <td> State: <input type="text" name="state" id="S1" placeholder="State" size"2"/> <td> Zip: <input type="text" name="zip" id="Z1" placeholder="Zip Code" size"5"/> </td> </tr>
-					</table>
-
-				</fieldset>
+				
 			</form>
 
 		</section>
