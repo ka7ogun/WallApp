@@ -52,9 +52,18 @@ nav ul li:hover {background-color: #fff;
 .submenu {	list-style: none;
 			display: inline-block;
 }
-		
-.portfolio {width: 30%;
+	
+.portfolio {width: 25%;
+			padding-right: 5px;
 			float: left;
+			/*clear: both;*/			
+}
+
+/*This style is for the float page*/
+.test {	background-color: #ccc;
+		width:	25%;
+		height: 25%;
+		float: right;
 
 }
 
@@ -62,3 +71,22 @@ nav ul li:hover {background-color: #fff;
 			padding: 5px 10px 5px 10px;
 
 }
+
+.top_text {	vertical-align: text-top;
+			clear: both;
+			max-width: 85%;
+			margin: 0, auto;
+			border: solid 1px red;
+}
+
+
+
+footer {text-align: center;
+		height: 10%;
+		background-color: #000;
+		color:#ccc;
+		clear: both;
+		min-width: 100%;
+		position: fixed;
+		bottom: 0px;
+ }
