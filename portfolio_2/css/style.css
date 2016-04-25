@@ -2,14 +2,21 @@ body {	background-color:#ffffcc;
 		/* this is a google font
 		font-family:'Shadows Into Light', cursive;*/
 		font-family: sans-serif;
-		margin: 5%;
 		text-align: justify;
+		margin: 0;
 
 }
 
-h1,h2,h3,h4,h5 { font-family: 'Shadows Into Light', cursive;
+@font-face { font-family: myfirstFont;
+			 src: url(../font/KGLifeisMessy.ttf);
+
+}
+
+
+h1,h2,h3,h4,h5 { font-family: myfirstFont;
 				 border: solid 1px red;
-				 margin: 0px;			
+				 margin: 0;
+				 padding: 0;			
 
 }
 
@@ -40,23 +47,42 @@ nav {margin:auto;
 
 }
 
-nav ul li a {	text-decoration: none;
+nav ul li a {	font-family: 'Shadows Into Light', cursive;
+				text-decoration: none;
 				font-weight: bold;
-				color:#000;  
+				color:#000;
 }
 
-nav ul li:hover {background-color: #fff;
+nav ul li a:hover {color: #ccc;
+
+}
+
+nav ul li a:visited {color: #f00;
+
+}
+
+input:focus {color: #f00;
+
+}
+
+nav ul li {background-color: #ffc;
 				 color: #000;
+
+}
+
+footer a {	color: #ffc;
+			text-decoration: none;
+
 }
 
 .submenu {	list-style: none;
 			display: inline-block;
 }
 	
-.portfolio {width: 25%;
-			padding-right: 5px;
-			float: left;
-			/*clear: both;*/			
+.portfolio { width: 25%;
+			 float: left;
+			 padding: 0 10px;
+			 clear: left;		
 }
 
 /*This style is for the float page*/
@@ -73,10 +99,10 @@ nav ul li:hover {background-color: #fff;
 }
 
 .top_text {	vertical-align: text-top;
-			clear: both;
-			max-width: 85%;
 			margin: 0, auto;
-			border: solid 1px red;
+			padding-right: 25px;
+			clear: both;
+			width: 100%;
 }
 
 
@@ -86,7 +112,8 @@ footer {text-align: center;
 		background-color: #000;
 		color:#ccc;
 		clear: both;
-		min-width: 100%;
+		width: 100%;
+		padding-top: 10px;
 		position: fixed;
 		bottom: 0px;
  }
