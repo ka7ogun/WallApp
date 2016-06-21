@@ -1,4 +1,4 @@
-body {	background-color:#ffffcc;
+body {	background-color: #ffc;
 		/* this is a google font
 		font-family:'Shadows Into Light', cursive;*/
 		font-family: sans-serif;
@@ -7,6 +7,8 @@ body {	background-color:#ffffcc;
 
 }
 
+
+
 @font-face { font-family: myfirstFont;
 			 src: url(../font/KGLifeisMessy.ttf);
 
@@ -14,28 +16,32 @@ body {	background-color:#ffffcc;
 
 
 h1,h2,h3,h4,h5 { font-family: myfirstFont;
-				 border: solid 1px red;
-				 margin: 0;
-				 padding: 0;			
+				 margin: 	   0;
+				 padding: 	   0;			
 
 }
 
 h1 {letter-spacing: 5px;}
 
-#wrap { min-width : 45%;
-		height: 10%;
-/* this property creates a rounded box*/
+#wrap { min-width:  45%;
+		height: 	10%;
+		border: solid 3px red;
 		border-radius: 5px;
-		border-color: #fff;
-		background-color: #ccc;
-/* this property centers a div*/
 		margin: 0 auto;
+		background-color: rgba(255, 255, 255, .5);
 }
 
 .center {text-align: center;
 
 }
 
+#menubar { background-color:	#ffc;
+		   width: 100vw;
+
+
+
+
+}
 
 #menu > li {list-style: none;
 			display: inline;
@@ -53,20 +59,20 @@ nav ul li a {	font-family: 'Shadows Into Light', cursive;
 				color:#000;
 }
 
-nav ul li a:hover {color: #ccc;
+nav ul li a:hover { color: #ccc;
 
 }
 
-nav ul li a:visited {color: #f00;
+nav ul li a:visited { color: #f00;
 
 }
 
-input:focus {color: #f00;
+input:focus { color: #f00;
 
 }
 
-nav ul li {background-color: #ffc;
-				 color: #000;
+nav ul li {	
+			color:				#000;
 
 }
 

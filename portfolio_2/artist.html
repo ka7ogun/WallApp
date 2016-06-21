@@ -2,7 +2,7 @@
 	<html>
 		<head>
  			<title>OFFICIAL WALL-OFF NYC SITE</title>
- 				
+
  				<!--Media Query Mobile Device-->
  				<link rel="stylesheet" media="only screen and (max-width: 650px)" href="css/mobile.css">
 
@@ -10,7 +10,7 @@
  				<link rel="stylesheet" media="only screen and (min-width: 651px)" href="css/desktop.css">
 
 
-			 	<!-- <link rel="stylesheet" type="text/css"  href="css/style.css">-->
+			 
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Muli:400,300italic,300' rel='stylesheet' type='text/css'>
 		</head>
@@ -22,24 +22,33 @@
 				<h1>Wall-Off NYC</h1>
 				<h3> "Teens Painting NYC" </h3>
 			</div>
-			<nav class="center">
-					<ul id="menu"> 
-					<li><a href="index.html"> Home </a> </li>
-
-					<li> <a href="walloff.html"> Wall-Off</a> </li>
-					<li> <a href="artist.html"> Artist</a> </li>
+				
+				<div class="dropdown">
+					<nav>
 					
-					<li> <a href="join.html">Join </a> 
-					<!-- Wait until you learn Javascript
-							<ul id="submenu"> 
-					 		<li> <a href="teen.html" target="_blank">Teen</a></li>
-					 		<li> <a href="adult.html" target="_blank">Adult</a></li>
-					 		</ul> -->
-					</li> 
-
-					<li> <a href="#contact">Contact </a></li>
-					</ul>
+						<ul><li> <a href="index.html"> Home </a> </li>
+							<li> <a href="walloff.html"> Wall-Off </a> </li>
+							<li><a href="artist.html"> Artist </a> </li>
+							<li><a href="join.html">
+								<span class="dropbtn"> Join </span>
+							
+													<div class="dropdown-content"> 
+											 		<a href="teen.html" target="_blank">Teen</a>
+											 		<a href="adult.html" target="_blank">Adult</a>
+											 		</div>
+											 		</a> 
+							</li>
+							
+							
+							
+							
+							
+							<li><a href="#contact"> Contact </a></li>
+						</ul>
+						
 				</nav>
+
+		
 		</header>
 
 
@@ -61,12 +70,21 @@
 		</section>
 
 		<footer>
+			<div id="bottomNav">
+				<a href="upload.html"><img src="image/mobilenav_01.gif"/></a>
+				<a href="map.html"><img src="image/mobilenav_02.gif"/></a>
+				<a href="tutor.html"><img src="image/mobilenav_04.gif"/></a>
+				<a href="donate.html"><img src="image/mobilenav_07.gif"/></a>
+			</div>
 			<div id="contact">
 				Contact us via email <a href="mailto:digikanyc@gmail.com">info@Wall_Off</a> 
+				All rights reserved by Wall-Off NYC &copy; Copyright
 			</div>
-				All rights reserved by Wall-Off NYC &copy; Copyright 
+				 
 		</footer>
-
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/nav.js"></script>
 	</body>
 
 </html>

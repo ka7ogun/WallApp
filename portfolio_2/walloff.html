@@ -3,40 +3,40 @@
 		<head>
  			<title>OFFICIAL WALL-OFF NYC SITE</title>
 			 	<!--Media Query Mobile Device-->
- 				<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+ 				<link rel="stylesheet" media="only screen and (max-width: 375px)" href="css/mobile.css">
 
  				<!--Media Query Desktop Device-->
- 				<link rel="stylesheet" media="only screen and (min-width: 481px)" href="css/desktop.css">
+ 				<link rel="stylesheet" media="only screen and (min-width: 376px)" href="css/desktop.css">
  				
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+			 	
 			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Muli:400,300italic,300' rel='stylesheet' type='text/css'>
 		</head>
 
 	<body>
 		<header>
 
-			<div class="center">
+			<div class="center" id="wrap">
 				<h1>Wall-Off NYC</h1>
 				<h3> "Teens Painting NYC" </h3>
 			</div>
-			<nav class="center">
-					<ul id="menu"> 
-					<li><a href="index.html"> Home </a> </li>
-
-					<li> <a href="walloff.html"> Wall-Off</a> </li>
-					<li> <a href="artist.html"> Artist</a> </li>
+			<nav class="dropdown">
 					
-					<li> <a href="join.html">Join </a> 
-						<!-- Wait until you learn Javascript
-							<ul id="submenu"> 
-					 		<li> <a href="teen.html" target="_blank">Teen</a></li>
-					 		<li> <a href="adult.html" target="_blank">Adult</a></li>
-					 		</ul> -->
-					</li> 
+						<ul><li> <a href="index.html"> Home </a> </li>
+							<li> <a href="walloff.html"> Wall-Off </a> </li>
+							<li><a href="artist.html"> Artist </a> </li>
+							<li><a href="join.html">
+								<span class="dropbtn"> Join </span>
+							
+													<div class="dropdown-content"> 
+											 		<a href="teen.html" target="_blank">Teen</a>
+											 		<a href="adult.html" target="_blank">Adult</a>
+											 		</div>
+											 		</a> </li>
+							<li><a href="#contact"> Contact </a></li>
+						</ul>	
+					</nav>
 
-					<li> <a href="#contact">Contact </a></li>
-					</ul>
-				</nav>
 		</header>
 
 
