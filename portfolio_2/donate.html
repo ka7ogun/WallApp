@@ -1,42 +1,93 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Wall-Off::Official Site </title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
 
-<html>
-	<head> 
-		<title>Youth_Participant</title>
-		<link rel="stylesheet" type="text/css"  href="css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-			 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Muli:400,300italic,300' rel='stylesheet' type='text/css'> 
-	</head>
-	<body>
-		<form>
-			<fieldset>
-				  <h2><legend> School Info </legend></h2>
-					<h4>
-						<table>
-						<tr><td>Name:</td><td><input type="text" name="name" id="N2" size="35" placeholder="First or Nickname"/></td></tr>
-								<tr><td>Email:</td><td><input type="text" name="email" id="E2" size="35" placeholder="Email Address"/></td></tr>
-							<tr> <td> Grade Level: </td> <td> <select> 
-																  <option> Middle School </option>
-																  <option> High School </option>
-																  <option> College </option>
-														</select> </td> </tr>
+	<div id="wrap">
+	 	<nav>			
+	 		<ul id="dropdown-content">
+				<a href="index.html"><li> Home </li></a>
+				<a href="artist.html"> <li>Artist</li></a>
+				<a href="join.html"><li>Join</li></a>
+				<a href="map.html"><li>Map</li></a>
+				<a href="upload.html"><li>Upload</li></a>
+			</ul>
+						
+			<table width="100%"><tr><td align="center">
+				<h1>WALL-OFF</h1>	
+				<h3>"Teens Painting NYC"</h3></td>
+				<td valign="top" align="right"><img src="image/mobilemenu.png" id="dropbtn"></td></tr>
+			</table>
+	 	</nav>
+	 	<div>
+
+
+	 		 <form method="POST" action="test.php" id="wallDonate">
+				<legend> Donate </legend>
+					<label> First Name:  <input type="text" name="firstname" id="FN" placeholder="First Name" /> </label> 
+
+					<label> Last Name: <input type="text" name="lastname" id="LN" placeholder="Last Name" /></label>
+							<br/>
+
+							<label> Email Address: <input type="text" name="email" id="E1" size="42" placeholder="We send current cites"/></label>
+
+							<label> Street Address: <input type="text" name="street" id="street1" size="42" placeholder="Billing Address"/></label>
+
+							<label> City: <input type="text" name="city1" id="city1" size="18" placeholder="City"/></label>
+
+							<label> State: <input type="text" name="state" id="state1" size="1" placeholder="State"/></label>
+
+							<label> Zip: <input type="text" name="zip" id="zip1" size="4" placeholder="Zipcode"/></label>
+
+							<label>Donate $$<select id="amount">
+									<option value="">Choose.....</option>
+									<option value="5">$5.00 </option>
+									<option value="10">$10.00</option>
+									<option value="20">$20.00</option>
+									<option value="25">$25.00</option>
+								   </select></label>
+
+							<label>Card Type:<br/>
+							Master <input type="radio" required name="cc1" id="cc1" value="1"/>
+							VISA <input type="radio" required name="cc1" id="cc1" value="2"/>
+							Discover <input type="radio" required name="cc1" id="cc1" value="3"/>
+							PayPal <input type="radio" required name="cc1" id="cc1" value="4"/></label>
+
+
+							<label> Credit Card #: <input type="text" name="email" id="cc" size="42" placeholder="No dashes required"/></label>
+
 							
-							<tr> <td class="center"> School Name: </td> <td> <input type="text" name="school" id="S1" size="42" placeholder="Middle School, High School or College"/> </td> </tr>
-							<tr> <td> Address:</td><td> <input type="text" name="address" id="A1" size="37" placeholder="Bldg#,Street Name"/> </td> </tr>
-							<tr> <td> City: </td><td><input type="text" name="city" id="C2" placeholder="Borough"/></td> </tr>
-							<tr> <td> State: <input type="text" name="state" id="S1" size="2"/> Zip:</td><td><input type="text" name="zip" id="Z1" placeholder="Zip Code" size"5"/> </td> </tr>
-							<tr><td colspan="2" class="center"><button type="button"> Sign Up</button></td></tr>
-					</table>
-					</h4>
-			</fieldset>
-		</form>
+						
+
+						<br/>
+							 <button type="button" id="donateBtn"> Donate </button>
+				</form>
+			</div>
+	 	    <div id="contact">
+	 			<footer>
+				Contact us via email <a href="mailto:digikanyc@gmail.com">info@Wall_Off</a> 
+			    All rights reserved by Wall-Off NYC &copy; Copyright 
+			</footer>
+		</div>
+
+	</div>
+	
+		
 
 
 
-
-
-
-
-	</body>
-
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/val.js"></script>
+</body>
 </html>
